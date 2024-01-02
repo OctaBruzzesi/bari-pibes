@@ -7,12 +7,12 @@ import Head from 'next/head';
 
 import Counter from '../components/Counter';
 import styles from '../styles/Home.module.css';
-import { remainingDaysTillBrc2022 } from '../utils';
+import { remainingDaysTillBali2024 } from '../utils';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
-      remainingDays: remainingDaysTillBrc2022(),
+      remainingDays: remainingDaysTillBali2024(),
     },
   };
 };

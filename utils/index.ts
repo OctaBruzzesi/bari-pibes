@@ -1,4 +1,4 @@
-export const remainingDaysTillBrc2022 = () => {
+export const remainingDaysTillBali2024 = () => {
   const now = Date.now();
   const trip = new Date('5/5/2024').getTime();
   const diff = trip - now;
