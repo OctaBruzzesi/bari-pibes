@@ -1,9 +1,12 @@
-import type { InferGetServerSidePropsType, NextPage } from 'next';
+import type {
+  InferGetServerSidePropsType,
+  GetServerSideProps,
+  NextPage,
+} from 'next';
+import Head from 'next/head';
 
 import Counter from '../components/Counter';
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { GetServerSideProps } from 'next';
 import { remainingDaysTillBrc2022 } from '../utils';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
