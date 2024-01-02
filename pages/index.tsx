@@ -1,10 +1,10 @@
-import type { InferGetServerSidePropsType, NextPage } from "next";
+import type { InferGetServerSidePropsType, NextPage } from 'next';
 
-import Counter from "../components/Counter";
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { GetServerSideProps } from "next";
-import { remainingDaysTillBrc2022 } from "../utils";
+import Counter from '../components/Counter';
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import { GetServerSideProps } from 'next';
+import { remainingDaysTillBrc2022 } from '../utils';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
@@ -20,8 +20,8 @@ const Home: NextPage = ({
   return (
     <div className={styles.container}>
       <Head>
-        <title>Bari 2022</title>
-        <meta name="description" content="Bari 2022 con the bandwidth" />
+        <title>Bali 2024</title>
+        <meta name="description" content="Bali 2024" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
