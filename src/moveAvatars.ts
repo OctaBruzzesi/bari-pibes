@@ -6,7 +6,7 @@ function moveAvatars() {
   const rand = (multi: number) => multi * Math.random()
 
   const move = () => {
-    photos.forEach(div => {
+    photos.forEach((div) => {
       let w = 150 // width of image in px
       let x = rand(ww - w)
       let y = rand(wh - w)

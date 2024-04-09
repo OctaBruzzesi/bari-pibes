@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-import Image from "next/image";
-import { photos } from "../src/photos";
-import { moveAvatars } from "../src/moveAvatars";
+import React, { useEffect } from 'react'
+import Image from 'next/image'
+import { photos } from '../src/photos'
+import { moveAvatars } from '../src/moveAvatars'
 
 type CounterProps = {
-  remainingDays: number;
-};
+  remainingDays: number
+}
 
 const Counter = ({ remainingDays }: CounterProps) => {
   useEffect(() => {
-    moveAvatars();
-  }, []);
+    moveAvatars()
+  }, [])
 
   return (
     <div>
@@ -34,7 +34,7 @@ const Counter = ({ remainingDays }: CounterProps) => {
 
       <p className="title">Viajamos en {remainingDays} dias</p>
     </div>
-  );
-};
+  )
+}
 
-export default Counter;
+export default Counter
