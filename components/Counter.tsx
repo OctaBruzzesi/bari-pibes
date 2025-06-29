@@ -23,15 +23,16 @@ const Counter = ({ remainingDays }: CounterProps) => {
             <Image
               src={photo}
               className="photo"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
               alt="photo"
-            />
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center"
+              }} />
           </div>
         ))}
       </div>
-
       <p className="title">Viajamos en {remainingDays} dias</p>
     </div>
   );
